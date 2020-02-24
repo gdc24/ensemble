@@ -27,11 +27,6 @@ namespace ensemble
             throw new NotImplementedException();
         }
 
-        partial void UIButton657_TouchUpInside(UIButton sender)
-        {
-            throw new NotImplementedException();
-        }
-
         partial void EditConflictsButton_TouchUpInside(UIButton sender)
         {
             throw new NotImplementedException();

@@ -21,5 +21,20 @@ namespace ensemble
             base.DidReceiveMemoryWarning ();
             // Release any cached data, images, etc that aren't in use.
         }
+
+        partial void UIButton655_TouchUpInside(UIButton sender)
+        {
+            throw new NotImplementedException();
+        }
+
+        partial void UIButton657_TouchUpInside(UIButton sender)
+        {
+            throw new NotImplementedException();
+        }
+
+        partial void EditConflictsButton_TouchUpInside(UIButton sender)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

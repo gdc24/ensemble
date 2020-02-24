@@ -140,6 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards">
+      <Version>17.4.0.50</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />

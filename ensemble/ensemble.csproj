@@ -76,6 +76,11 @@
     <Compile Include="CheckInViewController.designer.cs">
       <DependentUpon>CheckInViewController.cs</DependentUpon>
     </Compile>
+    <InterfaceDefinition Include="ScheduleTableViewController.xib" />
+    <Compile Include="ScheduleTableViewController.cs" />
+    <Compile Include="ScheduleTableViewController.designer.cs">
+      <DependentUpon>ScheduleTableViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

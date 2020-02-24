@@ -144,5 +144,20 @@
   <ItemGroup>
     <Content Include="Entitlements.plist" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\download.png" />
+    <BundleResource Include="Resources\Icons\icons8-calendar-50.png" />
+    <BundleResource Include="Resources\Icons\icons8-calendar-100.png" />
+    <BundleResource Include="Resources\Icons\icons8-edit-property-50.png" />
+    <BundleResource Include="Resources\Icons\icons8-edit-property-100.png" />
+    <BundleResource Include="Resources\Icons\icons8-list-50.png" />
+    <BundleResource Include="Resources\Icons\icons8-list-100.png" />
+    <BundleResource Include="Resources\Icons\icons8-male-user-50.png" />
+    <BundleResource Include="Resources\Icons\icons8-male-user-100.png" />
+    <BundleResource Include="Resources\Icons\Screen-Shot-2020-02-23-at-11.06.32-AM-ConvertImage.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

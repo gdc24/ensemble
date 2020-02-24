@@ -64,6 +64,18 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <Compile Include="ScheduleDetailViewController.cs" />
+    <Compile Include="ScheduleDetailViewController.designer.cs">
+      <DependentUpon>ScheduleDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConflictsViewController.cs" />
+    <Compile Include="ConflictsViewController.designer.cs">
+      <DependentUpon>ConflictsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInViewController.cs" />
+    <Compile Include="CheckInViewController.designer.cs">
+      <DependentUpon>CheckInViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

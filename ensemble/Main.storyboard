@@ -733,8 +733,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" catalog="system"/>
         <image name="list.bullet" catalog="system"/>
+        <image name="calendar" catalog="system"/>
         <image name="doc.text.fill" catalog="system"/>
         <image name="rectangle.3.offgrid.fill" catalog="system"/>
         <image name="person.circle" catalog="system"/>

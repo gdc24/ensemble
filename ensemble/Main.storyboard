@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305.797" y="-677.4457"/>
+            <point key="canvasLocation" x="2068.797" y="-634.4457"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pHH-Wd-tb6">
@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC7-zA-1Vm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2066.667" y="-670.1087"/>
+            <point key="canvasLocation" x="2801.667" y="-621.1087"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -212,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="230" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089.855" y="0.0"/>
+            <point key="canvasLocation" x="979.855" y="10"/>
         </scene>
         <!--profile-->
         <scene sceneID="234">
@@ -371,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="244" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="750"/>
+            <point key="canvasLocation" x="975" y="874"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NLl-4J-Big">
@@ -407,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSB-0b-OmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047.826" y="750.8152"/>
+            <point key="canvasLocation" x="1445.826" y="874.8152"/>
         </scene>
         <!--Schedule Detail View Controller-->
         <scene sceneID="679">
@@ -643,7 +643,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ckh-FV-KFV">
-                                <rect key="frame" x="0.0" y="103" width="414" height="633"/>
+                                <rect key="frame" x="-30" y="-116" width="414" height="633"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -733,8 +733,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="list.bullet" catalog="system"/>
         <image name="calendar" catalog="system"/>
+        <image name="list.bullet" catalog="system"/>
         <image name="doc.text.fill" catalog="system"/>
         <image name="rectangle.3.offgrid.fill" catalog="system"/>
         <image name="person.circle" catalog="system"/>

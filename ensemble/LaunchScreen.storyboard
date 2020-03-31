@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="244">
+    <device id="retina6_1" orientation="portrait"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="243">
+            <objects>
+                <viewController id="244" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="241"/>
+                        <viewControllerLayoutGuide type="bottom" id="242"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="245">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.12156862745098039" green="0.76078431372549016" blue="0.66274509803921566" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ensemble" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="945" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="93" y="173" width="228" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52" weight="semibold"/>
+                                <color key="highlightedColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1343" firstItem="945" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
+                            <constraint id="1355" firstAttribute="centerY" secondItem="945" secondAttribute="centerY" constant="249"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="246" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="-332"/>
+        </scene>
+    </scenes>
+</document>

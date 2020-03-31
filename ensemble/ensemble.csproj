@@ -44,7 +44,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <!--<CodesignEntitlements>Entitlements.plist</CodesignEntitlements>-->
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
   </PropertyGroup>
@@ -54,7 +54,7 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <!--<CodesignEntitlements>Entitlements.plist</CodesignEntitlements>-->
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
@@ -63,7 +63,6 @@
     <Compile Include="AppDelegate.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <Compile Include="ScheduleDetailViewController.cs" />
     <Compile Include="ScheduleDetailViewController.designer.cs">
       <DependentUpon>ScheduleDetailViewController.cs</DependentUpon>
@@ -81,6 +80,7 @@
     <Compile Include="ScheduleTableViewController.designer.cs">
       <DependentUpon>ScheduleTableViewController.cs</DependentUpon>
     </Compile>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />
@@ -96,16 +96,16 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\First.imageset\Contents.json">
-          <Visible>false</Visible>
+      <Visible>false</Visible>
     </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\First.imageset\First.pdf">
-          <Visible>false</Visible>
+    <ImageAsset Include="Assets.xcassets\First.imageset\First.pdf">
+      <Visible>false</Visible>
     </ImageAsset>
-        <ImageAsset Include="Assets.xcassets\Second.imageset\Contents.json">
-          <Visible>false</Visible>
-        </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Second.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Second.imageset\Second.pdf">
-          <Visible>false</Visible>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
       <Visible>false</Visible>
@@ -164,9 +164,7 @@
   <ItemGroup>
     <Content Include="Entitlements.plist" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\Icons\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BundleResource Include="Resources\Icons\download.png" />
     <BundleResource Include="Resources\Icons\icons8-calendar-50.png" />

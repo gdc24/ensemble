@@ -6,6 +6,9 @@ namespace ensemble
 {
     public partial class ScheduleTableViewController : UIViewController
     {
+        public ScheduleTableViewController(IntPtr handle) : base(handle)
+        {
+        }
         public ScheduleTableViewController() : base("ScheduleTableViewController", null)
         {
         }

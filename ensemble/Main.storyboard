@@ -322,7 +322,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="callboard" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="FKv-ko-dt1">
-                                <rect key="frame" x="20" y="30" width="172" height="43"/>
+                                <rect key="frame" x="15" y="41" width="172" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
@@ -643,7 +643,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ckh-FV-KFV">
-                                <rect key="frame" x="-30" y="-116" width="414" height="633"/>
+                                <rect key="frame" x="0.0" y="111" width="414" height="633"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -696,7 +696,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGx-La-blx">
-                                <rect key="frame" x="323" y="20" width="71" height="30"/>
+                                <rect key="frame" x="323" y="43" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="check in &gt;">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -706,7 +706,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-b3-2ye">
-                                <rect key="frame" x="292" y="50" width="102" height="30"/>
+                                <rect key="frame" x="292" y="73" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="edit conflicts &gt;">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -715,15 +715,18 @@
                                     <segue destination="3WJ-aG-fKx" kind="show" id="COU-xz-8xO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fHS-Ho-vgP" fixedFrame="YES">
-                                <rect key="frame" x="20" y="20" width="166" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fHS-Ho-vgP">
+                                <rect key="frame" x="20" y="43" width="166" height="50"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" red="0.001786756329" green="0.76382833719999998" blue="0.66290503739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint id="3814" firstItem="fHS-Ho-vgP" firstAttribute="top" secondItem="1597" secondAttribute="top" constant="43"/>
+                            <constraint id="3817" firstItem="fHS-Ho-vgP" firstAttribute="top" secondItem="1593" secondAttribute="bottom" constant="23"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="schedule" image="calendar" catalog="system" id="Tjs-Fc-azt"/>
                 </viewController>
@@ -733,8 +736,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" catalog="system"/>
         <image name="list.bullet" catalog="system"/>
+        <image name="calendar" catalog="system"/>
         <image name="doc.text.fill" catalog="system"/>
         <image name="rectangle.3.offgrid.fill" catalog="system"/>
         <image name="person.circle" catalog="system"/>

@@ -6,16 +6,16 @@ namespace ensemble {
   
   interface NFCReaderSession {
   
-    public void DidDetect(NFCReaderSession session, NFCMessage[] messages) {
+    public void DidDetect(NFCNdefReaderSession session, NFCNdefMessage[] messages) {
       
-      foreach (NFCMessage msg in messages) {  // adds the messages to a list view
+      foreach (NFCNdefMessage msg in messages) {  // adds the messages to a list view
         DetectedMessages.Add(msg);
       }
       
       DispatchQueue.MainQueue.DispatchAsync(() => { this.TableView.ReloadData(); });
     }
     
-    public void DidInvalidate(NFCReaderSession session, NSError error) {
+    public void DidInvalidate(NFCNdefReaderSession session, NSError error) {
       
       var readerError = (NFCReaderError)(long)error.Code;
       if (readerError != NFCReaderError.ReaderSessionInvalidationErrorFirstNDEFTagRead &&

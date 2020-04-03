@@ -3,6 +3,16 @@ using CoreNFC;
 namespace ensemble {
 
   // code mainly from https://docs.microsoft.com/en-us/xamarin/ios/platform/introduction-to-ios11/corenfc
+  // to start reader session put this in code
+  /*
+  * Session = new NFCNdefReaderSession(this, null, true);
+  * Session?.BeginSession();
+  */
+  
+  // to cancel reader session put this in
+  /*
+  * Session.InvalidateSession();
+  */
   
   interface NFCReaderSession {
   

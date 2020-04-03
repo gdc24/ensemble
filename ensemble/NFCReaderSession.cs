@@ -1,3 +1,5 @@
+using CoreNFC;
+
 namespace ensemble {
 
   // code mainly from https://docs.microsoft.com/en-us/xamarin/ios/platform/introduction-to-ios11/corenfc

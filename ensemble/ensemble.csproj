@@ -113,6 +113,7 @@
       <DependentUpon>PayloadsTableViewController.cs</DependentUpon>
     </Compile>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <Compile Include="Database\DatabaseConnection.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />
@@ -192,6 +193,9 @@
     <PackageReference Include="Syncfusion.Xamarin.Cards">
       <Version>17.4.0.50</Version>
     </PackageReference>
+    <PackageReference Include="Npgsql">
+      <Version>4.1.3.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
@@ -209,6 +213,9 @@
     <BundleResource Include="Resources\Icons\icons8-male-user-50.png" />
     <BundleResource Include="Resources\Icons\icons8-male-user-100.png" />
     <BundleResource Include="Resources\Icons\Screen-Shot-2020-02-23-at-11.06.32-AM-ConvertImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

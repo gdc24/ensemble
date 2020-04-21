@@ -6,7 +6,7 @@ CREATE TABLE "groups" (
 CREATE TABLE "events" (
   "intEventID" SERIAL PRIMARY KEY,
   "strName" varchar(255),
-  "dtmDate" datetime,
+  "dteDate" date,
   "strLocation" varchar(255),
   "intGroupID" int
 );
@@ -15,7 +15,7 @@ CREATE TABLE "callboard" (
   "intCallboardID" SERIAL PRIMARY KEY,
   "strSubject" varchar(255),
   "strNote" varchar(255),
-  "dtmDateTime" datetime,
+  "dtmDateTime" timestamp,
   "intPostedByMemberID" int,
   "intEventID" int
 );
@@ -30,8 +30,8 @@ CREATE TABLE "members" (
 
 CREATE TABLE "rehearsals" (
   "intRehearsalID" SERIAL PRIMARY KEY,
-  "dtmStartDateTime" datetime,
-  "dtmEndDateTime" datetime,
+  "dtmStartDateTime" timestamp,
+  "dtmEndDateTime" timestamp,
   "strLocation" varchar(255),
   "strNotes" varchar(255),
   "intEventID" int
@@ -39,8 +39,8 @@ CREATE TABLE "rehearsals" (
 
 CREATE TABLE "rehearsalparts" (
   "intRehearsalPartID" SERIAL PRIMARY KEY,
-  "dtmStartDateTime" datetime,
-  "dtmEndDateTime" datetime,
+  "dtmStartDateTime" timestamp,
+  "dtmEndDateTime" timestamp,
   "intRehearsalID" int,
   "intTypeID" int
 );
@@ -53,22 +53,22 @@ CREATE TABLE "types" (
 
 CREATE TABLE "conflicts" (
   "intConflictID" SERIAL PRIMARY KEY,
-  "dtmStartDateTime" datetime,
-  "dtmEndDateTime" datetime,
+  "dtmStartDateTime" timestamp,
+  "dtmEndDateTime" timestamp,
   "intMemberID" int
 );
 
 CREATE TABLE "eventSchedule" (
   "intEventScheduleID" SERIAL PRIMARY KEY,
-  "intMondayStart" int,
-  "intTuesdayStart" int,
-  "intWednesdayStart" int,
-  "intThursdayStart" int,
-  "intFridayStart" int,
-  "intSaturdayStart" int,
-  "intSundayStart" int,
-  "intWeekdayDuration" int,
-  "intWeekendDuration" int,
+  "tmeMondayStart" time,
+  "tmeTuesdayStart" time,
+  "tmeWednesdayStart" time,
+  "tmeThursdayStart" time,
+  "tmeFridayStart" time,
+  "tmeSaturdayStart" time,
+  "tmeSundayStart" time,
+  "durWeekdayDuration" interval,
+  "durWeekendDuration" interval,
   "intEventID" int
 );
 
@@ -80,15 +80,15 @@ CREATE TABLE "attendancePlanned" (
 
 CREATE TABLE "attendanceActual" (
   "intAttendanceActualID" SERIAL PRIMARY KEY,
-  "dtmInTime" datetime,
-  "dtmOutTime" datetime,
+  "tmeInTime" time,
+  "tmeOutTime" time,
   "ysnDidShow" bool,
   "intAttendancePlannedID" int
 );
 
 CREATE TABLE "tasks" (
   "intTaskID" SERIAL PRIMARY KEY,
-  "dtmDue" datetime,
+  "dtmDue" timestamp,
   "strName" varchar(255),
   "strAttachment" varchar(255),
   "intAssignedToMemberID" int,

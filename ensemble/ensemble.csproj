@@ -84,6 +84,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Database\GetDAL.cs" />
+    <Compile Include="Database\InsertDAL.cs" />
     <Compile Include="Database\ScheduleDAL.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />

@@ -171,7 +171,6 @@ namespace ensemble.Database
 
         #endregion
 
-
         #region GET LISTS
 
         public List<Group> GetAllGroups()

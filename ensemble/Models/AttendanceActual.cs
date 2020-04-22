@@ -10,6 +10,14 @@ namespace ensemble.Models
 {
     class AttendanceActual
     {
+        public AttendanceActual(int intAttendanceActualID, DateTime dtmInTime, DateTime dtmOutTime, bool ysnDidShow, AttendancePlanned attendancePlanned)
+        {
+            IntAttendanceActualID = intAttendanceActualID;
+            DtmInTime = dtmInTime;
+            DtmOutTime = dtmOutTime;
+            YsnDidShow = ysnDidShow;
+            AttendancePlanned = attendancePlanned;
+        }
 
         public int IntAttendanceActualID { get; set; }
 

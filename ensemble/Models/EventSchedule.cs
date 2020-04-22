@@ -11,6 +11,21 @@ namespace ensemble.Models
 {
     class EventSchedule
     {
+        public EventSchedule(int intEventScheduleID, LocalTime tmeMondayStart, LocalTime tmeTuesdayStart, LocalTime tmeWednesdayStart, LocalTime tmeThursdayStart, LocalTime tmeFridayStart, LocalTime tmeSaturdayStart, LocalTime tmeSundayStart, Duration durWeekdayDuration, Duration durWeekendDuration, Event paramEvent)
+        {
+            IntEventScheduleID = intEventScheduleID;
+            TmeMondayStart = tmeMondayStart;
+            TmeTuesdayStart = tmeTuesdayStart;
+            TmeWednesdayStart = tmeWednesdayStart;
+            TmeThursdayStart = tmeThursdayStart;
+            TmeFridayStart = tmeFridayStart;
+            TmeSaturdayStart = tmeSaturdayStart;
+            TmeSundayStart = tmeSundayStart;
+            DurWeekdayDuration = durWeekdayDuration;
+            DurWeekendDuration = durWeekendDuration;
+            Event = paramEvent;
+        }
+
         public int IntEventScheduleID { get; set; }
 
         public LocalTime TmeMondayStart { get; set; }

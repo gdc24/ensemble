@@ -11,6 +11,12 @@ namespace ensemble.Models
 {
     class Group
     {
+        public Group(int intGroupID, string strName)
+        {
+            IntGroupID = intGroupID;
+            StrName = strName;
+        }
+
         public int IntGroupID { get; set; }
 
         public string StrName { get; set; }

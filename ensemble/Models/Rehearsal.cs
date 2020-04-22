@@ -10,6 +10,16 @@ namespace ensemble.Models
 {
     class Rehearsal
     {
+        public Rehearsal(int intRehearsalID, DateTime dtmStartDateTime, DateTime dtmEndDateTime, string strLocation, string strNotes, Event paramEvent)
+        {
+            IntRehearsalID = intRehearsalID;
+            DtmStartDateTime = dtmStartDateTime;
+            DtmEndDateTime = dtmEndDateTime;
+            StrLocation = strLocation;
+            StrNotes = strNotes;
+            Event = paramEvent;
+        }
+
         public int IntRehearsalID { get; set; }
 
         public DateTime DtmStartDateTime { get; set; }

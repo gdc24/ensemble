@@ -10,6 +10,16 @@ namespace ensemble.Models
 {
     class Callboard
     {
+        public Callboard(int intCallboardID, string strSubject, string strNote, DateTime dtmDateTime, Member postedByMember, Event paramEvent)
+        {
+            IntCallboardID = intCallboardID;
+            StrSubject = strSubject;
+            StrNote = strNote;
+            DtmDateTime = dtmDateTime;
+            PostedByMember = postedByMember;
+            Event = paramEvent;
+        }
+
         public int IntCallboardID { get; set; }
 
         public string StrSubject { get; set; }

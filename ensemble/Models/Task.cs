@@ -10,6 +10,18 @@ namespace ensemble.Models
 {
     class Task
     {
+
+        public Task(int intTaskID, DateTime dtmDue, string strName, string strAttachment, Member memberAssignedTo, Member memberAssignedBy, Event paramEvent)
+        {
+            IntTaskID = intTaskID;
+            DtmDue = dtmDue;
+            StrName = strName;
+            StrAttachment = strAttachment;
+            MemberAssignedTo = memberAssignedTo;
+            MemberAssignedBy = memberAssignedBy;
+            Event = paramEvent;
+        }
+
         public int IntTaskID { get; set; }
 
         public DateTime DtmDue { get; set; }

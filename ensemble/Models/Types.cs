@@ -2,6 +2,12 @@
 {
     class Types
     {
+        public Types(int intTypeID, string strName, Event paramEvent)
+        {
+            IntTypeID = intTypeID;
+            StrName = strName;
+            Event = paramEvent;
+        }
 
         public int IntTypeID { get; set; }
 
